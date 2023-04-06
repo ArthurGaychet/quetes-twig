@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bonjour</title>
+    <title>Products</title>
     <link rel="icon" href="/assets/images/favicon.png">
-    {# <link rel="stylesheet" href="/assets/css/styles.css">  #}
+    {# <link rel="stylesheet" href="/assets/css/styles.css"> #}
 </head>
 
 <body>
-    <h1>Bonjour {{ name }} !</h1>
+    {% for product in products %}
+        <ul> {{products.title}} </ul>
+    {% endfor %}
+    {{ dump(products) }}
 </body>
 </html>
